@@ -1,0 +1,21 @@
+metadata:
+  labels:
+    pipeline: jenkinsfile
+    tier: A
+spec:
+  containers:
+    - name: 'jnlp'
+      image: cloudbees/cloudbees-core-agent_latest
+      resources:
+        requests:
+          cpu: "1.0"
+          memory: "512Mi"
+        limits:
+          cpu: "1.0"
+          memory: "512Mi"
+    - name: 'maven'
+      image: maven:latest
+      command:
+        - cat
+      tty: true  
+      
