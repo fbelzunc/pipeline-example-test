@@ -5,7 +5,7 @@ metadata:
 spec:
   containers:
     - name: 'jnlp'
-      image: cloudbees/cloudbees-core-agent_latest
+      image: cloudbees/cloudbees-core-agent:latest
       resources:
         requests:
           cpu: "1.0"
