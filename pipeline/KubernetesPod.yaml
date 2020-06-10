@@ -4,12 +4,13 @@ metadata:
     tier: A
 spec:
   containers:
-  - name: 'jnlp'
-    image: cloudbees/cloudbees-core-agent:latest
+  - name: "jnlp"
+    image: "cloudbees/cloudbees-core-agent:latest"
+    imagePullPolicy: "IfNotPresent"
     resources:
-      requests:
-        cpu: "1.0"
-        memory: "512Mi"
       limits:
+        memory: "3052Mi"
         cpu: "1.0"
-        memory: "512Mi"
+      requests: {}
+    securityContext:
+      privileged: false
