@@ -10,7 +10,7 @@ pipeline {
   stages {
       stage('Main') {
           steps {
-              sh 'hostname'
+              sh 'ls -la'
           }
       }
     }
