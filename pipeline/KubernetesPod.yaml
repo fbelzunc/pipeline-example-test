@@ -8,7 +8,7 @@ spec:
     image: "maven"
     imagePullPolicy: "IfNotPresent"
     resources:
-      limits: {}
-      requests: {}
+      memory: "4096Mi"
+      cpu: "0.5"
     securityContext:
       privileged: false
