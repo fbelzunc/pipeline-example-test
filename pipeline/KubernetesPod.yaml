@@ -10,7 +10,7 @@ spec:
     resources:
       limits:
         memory: "3052Mi"
-        cpu: "0.2"
+        cpu: "0.5"
       requests: {}
     securityContext:
       privileged: false
