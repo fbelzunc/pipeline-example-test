@@ -4,13 +4,11 @@ metadata:
     tier: A
 spec:
   containers:
-  - name: "jnlp"
-    image: "cloudbees/cloudbees-core-agent:latest"
+  - name: "maven"
+    image: "maven"
     imagePullPolicy: "IfNotPresent"
     resources:
-      limits:
-        memory: "3052Mi"
-        cpu: "0.5"
+      limits: {}
       requests: {}
     securityContext:
       privileged: false
