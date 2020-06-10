@@ -3,7 +3,7 @@ pipeline {
     kubernetes {
     label 'fbelzunc-pod-template'
     defaultContainer 'jnlp'
-    yamlFile 'pipeline/KubernetesPos.yaml'
+    yamlFile 'pipeline/KubernetesPod.yaml'
     }
   }
   
