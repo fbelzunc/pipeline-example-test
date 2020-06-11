@@ -6,7 +6,7 @@ spec:
   containers:
   - name: "maven"
     image: "maven"
-    command: ["/bin/sh","cat"]
+    command: ["/bin/sh","-c","cat"]
     imagePullPolicy: "IfNotPresent"
     resources:
       requests:
