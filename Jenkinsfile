@@ -11,7 +11,7 @@ pipeline {
       stage('Main') {
           steps {
               sh 'echo "Hello World!"'
-              sh 'sleep 60'
+              sh 'sleep 5'
           }
       }
     }
