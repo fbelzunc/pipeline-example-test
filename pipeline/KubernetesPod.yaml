@@ -5,8 +5,10 @@ metadata:
 spec:
   containers:
   - name: "maven"
-    image: "maven"
-    command: ["/bin/sh","-c","cat"]
+    image: "maven:alpine"
+    command:
+    - cat
+    tty: true
     imagePullPolicy: "IfNotPresent"
     resources:
       requests:
