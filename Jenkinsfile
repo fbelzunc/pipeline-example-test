@@ -4,7 +4,7 @@ pipeline {
     label 'fbelzunc-pod-template-without-jnlp'
     defaultContainer 'jnlp'
     yamlFile 'pipeline/KubernetesPod.yaml'
-    yamlMergeStrategy 'merge()'  
+    yamlMergeStrategy merge()
     }
   }
   
