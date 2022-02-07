@@ -7,7 +7,7 @@ pipeline {
     }
   }
   
-  stages_TODELETE {
+  stages {
       stage('Main') {
           steps {
               sh 'echo "Hello World!"'
