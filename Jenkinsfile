@@ -10,7 +10,7 @@ pipeline {
   stages {
       stage('Main') {
           steps {
-              sh 'echo "Hello World!.test."'
+              sh 'echo "Hello World!"'
           }
       }
     }
