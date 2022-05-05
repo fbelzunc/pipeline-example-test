@@ -1,7 +1,7 @@
 pipeline {
   agent {
     kubernetes {
-    label 'fbelzunc-pod-template'
+    label 'defauilt-java'
     defaultContainer 'jnlp'
     yamlFile 'pipeline/KubernetesPod.yaml'
     }
