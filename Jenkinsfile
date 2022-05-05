@@ -10,7 +10,7 @@ pipeline {
   stages {
       stage('Main') {
           steps {
-              sh 'echo "Hello World!"'
+              sh 'echo "Hello World!. We are trying to trigger a Jenkins job with WebHook configured."'
           }
       }
     }
