@@ -11,6 +11,7 @@ pipeline {
       stage('Main') {
           steps {
               sh 'ls -la'
+              sh 'echo Hello World!'
           }
       }
     }
